@@ -1,0 +1,33 @@
+{
+  "observation_id": "keri_generator_thermal_observation_v1",
+  "source_type": "scientific_analogue",
+  "validation_status": "published_observations_not_identified_rc",
+  "generator_profile_id": "keri_afpm_uav_coil3_2021",
+  "published_rated_analysis": {
+    "output_power_w": 3000.0,
+    "speed_rpm": 7000.0,
+    "current_a": 15.5,
+    "copper_loss_w": 96.6,
+    "core_loss_w": 1.5,
+    "mechanical_loss_w": 200.0,
+    "ambient_temperature_c": 28.0,
+    "coil_temperature_range_c": [65.0, 66.0]
+  },
+  "published_continuous_test": {
+    "duration_min_greater_than": 30.0,
+    "output_power_kw_greater_than": 3.0,
+    "measured_coil_temperature_c_approximately": 40.0,
+    "cooling_description": "published prototype/test-jig arrangement; not the project installation"
+  },
+  "source": {
+    "title": "Axial-Flux Permanent-Magnet Generator Design for Hybrid Electric Propulsion Drone Applications",
+    "doi": "10.3390/en14248509",
+    "url": "https://www.mdpi.com/1996-1073/14/24/8509",
+    "scope": "Table 5, Table 6 and Figure 15 thermal observations"
+  },
+  "warnings": [
+    "scientific_analogue_not_project_generator",
+    "single_trajectory_does_not_uniquely_identify_rth_and_cth",
+    "published_losses_must_not_all_be_assigned_to_winding_node"
+  ]
+}

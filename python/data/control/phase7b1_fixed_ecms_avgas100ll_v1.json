@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "profile_id": "phase7b1_fixed_ecms_avgas100ll_v1",
+  "strategy": "fixed_factor_ecms",
+  "fuel_lhv_j_per_kg": 43500000.0,
+  "fuel_lhv_basis": "AVGAS_100LL_reference",
+  "equivalence_factor_discharge": 1.0,
+  "equivalence_factor_charge": 1.0,
+  "soc_feedback_enabled": false,
+  "aging_penalty_enabled": false,
+  "thermal_penalty_enabled": false,
+  "plating_penalty_enabled": false,
+  "engineering_reference_only": true,
+  "validated_for_target_powertrain": false,
+  "exact_two_stroke_oil_blend_lhv_known": false,
+  "factor_calibration_status": "not_calibrated_engineering_reference",
+  "source_type": "engineering_reference",
+  "source": [
+    "GOST R 55493-2013, AVGAS 100LL net heat of combustion >= 43.5 MJ/kg",
+    "ExxonMobil Aviation AVGAS 100LL product specification, net heat of combustion 43.50 MJ/kg minimum",
+    "Sciarretta, Back, Guzzella, IEEE TCST 12(3), 2004, DOI 10.1109/TCST.2004.824312",
+    "Xie, Savvaris, Tsourdos, Aerospace Science and Technology 85 (2019) 13-23, DOI 10.1016/j.ast.2018.12.001"
+  ],
+  "provenance": {
+    "lhv_value": "published fuel specification minimum/reference",
+    "equivalence_factors": "engineering reference only; not copied from literature",
+    "candidate_physics": "Phase 7A frozen candidate map",
+    "exact_target_fuel_oil_blend_measurement": "not_available"
+  },
+  "warnings": [
+    "EQUIVALENCE_FACTORS_NOT_CALIBRATED",
+    "REFERENCE_AVGAS_LHV_NOT_MEASURED_TARGET_BLEND",
+    "FIXED_FACTOR_ONLY"
+  ]
+}

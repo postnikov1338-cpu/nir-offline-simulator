@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "profile_id": "phase7b2_soc_adaptive_ecms_diagnostic_v1",
+  "strategy": "proportional_soc_adaptive_ecms",
+  "fuel_lhv_j_per_kg": 43500000.0,
+  "fuel_lhv_basis": "AVGAS_100LL_reference",
+  "base_equivalence_factor_discharge": 1.0,
+  "base_equivalence_factor_charge": 1.0,
+  "soc_management_low": 0.70,
+  "soc_management_reference": 0.80,
+  "soc_management_high": 0.90,
+  "soc_proportional_gain": 0.0,
+  "equivalence_factor_discharge_min": 0.0,
+  "equivalence_factor_discharge_max": 2.0,
+  "equivalence_factor_charge_min": 0.0,
+  "equivalence_factor_charge_max": 2.0,
+  "selection_hysteresis_enabled": false,
+  "selection_hysteresis_relative": 0.0,
+  "hysteresis_objective_scale_floor_kg_h": 1e-09,
+  "soc_feedback_enabled": true,
+  "integral_soc_control_enabled": false,
+  "minimum_dwell_time_enabled": false,
+  "minimum_dwell_time_s": 0.0,
+  "aging_penalty_enabled": false,
+  "thermal_penalty_enabled": false,
+  "plating_penalty_enabled": false,
+  "engineering_diagnostic_only": true,
+  "parameters_calibrated_for_target_powertrain": false,
+  "exact_two_stroke_oil_blend_lhv_known": false,
+  "source_type": "engineering_diagnostic_fixture",
+  "source": [
+    "Sciarretta, Back, Guzzella, IEEE TCST 12(3), 2004, DOI 10.1109/TCST.2004.824312",
+    "Onori, Serrao, Rizzoni, Hybrid Electric Vehicles: Energy Management Strategies, Springer, 2016",
+    "Xie, Savvaris, Tsourdos, Aerospace Science and Technology 85 (2019) 13-23, DOI 10.1016/j.ast.2018.12.001"
+  ],
+  "provenance": {
+    "ecms_scientific_basis": "instantaneous equivalent consumption minimization",
+    "soc_feedback_scientific_basis": "bounded proportional engineering controller",
+    "soc_management_parameters": "diagnostic fixture only",
+    "kp": "engineering tuning parameter; not calibrated",
+    "hysteresis": "supervisory anti-chatter threshold; not calibrated"
+  },
+  "warnings": [
+    "SOC_FEEDBACK_PARAMETERS_NOT_CALIBRATED",
+    "NO_TERMINAL_SOC_OPTIMIZATION",
+    "NO_ENGINE_TRANSIENT_MODEL",
+    "NO_INTEGRAL_SOC_CONTROL",
+    "NOT_MISSION_GLOBAL_OPTIMUM"
+  ]
+}

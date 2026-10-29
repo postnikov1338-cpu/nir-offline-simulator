@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "fixture_id": "synthetic_powertrain_mission_fixture_v1",
+  "source_type": "synthetic_test_fixture",
+  "powertrain_fixture_id": "synthetic_powertrain_fixture_v1",
+  "powertrain_solver_overrides": {
+    "rpm_grid_step": 2000.0,
+    "refine_infeasible_to_feasible_boundary": false
+  },
+  "generator_thermal_profile_id": "generator_thermal_nominal_v1",
+  "heatsink_profile_id": "heatsink_nominal_v1",
+  "rectifier_thermal_mode": "steady_state",
+  "battery_thermal": {
+    "ambient_c": 25.0,
+    "initial_c": 25.0,
+    "specific_heat_j_kg_k": 1100.0,
+    "conductivity_w_m_k": 0.5,
+    "convection_w_m2_k": 5.0,
+    "exposed_area_m2": 0.1,
+    "conduction_length_m": 0.025,
+    "core_mass_fraction": 0.5,
+    "warning_c": 60.0
+  },
+  "mission_config": {
+    "dt_s": 1.0,
+    "battery_temperature_limit_c": 60.0,
+    "battery_temperature_limit_source_type": "engineering_assumption",
+    "shaft_transient_model": "not_implemented"
+  },
+  "initial_state": {
+    "time_s": 0.0,
+    "battery_soc": 0.8,
+    "battery_core_temperature_c": 25.0,
+    "battery_surface_temperature_c": 25.0,
+    "generator_temperature_c": 60.0,
+    "rectifier_sink_temperature_c": 60.0,
+    "rectifier_case_temperature_c": 60.0,
+    "rectifier_junction_temperature_c": 60.0,
+    "fuel_remaining_kg": null,
+    "previous_bus_voltage_v": null,
+    "previous_engine_rpm": null
+  },
+  "warnings": [
+    "synthetic_mission_not_physical_hardware",
+    "shaft_transient_model_not_implemented",
+    "battery_thermal_parameters_are_engineering_fixture",
+    "generator_and_heatsink_thermal_parameters_are_engineering_sensitivity"
+  ]
+}

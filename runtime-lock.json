@@ -1,0 +1,13 @@
+{
+  "pyodide": "0.29.5",
+  "python": "3.13.2",
+  "numpy": "2.2.5",
+  "source": "https://cdn.jsdelivr.net/pyodide/v0.29.5/full/",
+  "abi": {
+    "abi_version": "2025_0",
+    "arch": "wasm32",
+    "platform": "emscripten_4_0_9",
+    "python": "3.13.2"
+  },
+  "numpy_wheel_sha256": "800c98edc0c864dfa49f07005680c699b4b42b84eae1f8cb19d35b3634e7f05c"
+}

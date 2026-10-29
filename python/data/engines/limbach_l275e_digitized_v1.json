@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "profile_id": "limbach_l275e_digitized_v1",
+  "revision": 1,
+  "manufacturer": "Limbach Flugmotoren GmbH",
+  "model": "L275E",
+  "engine_type": "2-cylinder horizontally opposed 2-stroke",
+  "displacement_cm3": 274.0,
+  "dry_mass_kg": 7.2,
+  "rated": {
+    "power_kw": 15.0,
+    "rpm": 7200.0
+  },
+  "engine_max_rpm": 7200.0,
+  "curve_kind": "full_load",
+  "source_type": "digitized_from_manufacturer_graph",
+  "precision": "approximate",
+  "validity": {
+    "digitized_map_min_rpm": 4000.0,
+    "digitized_map_max_rpm": 7000.0,
+    "out_of_range": "stop"
+  },
+  "source": {
+    "source_id": "limbach_l275e_datasheet_en",
+    "title": "Limbach L275E datasheet",
+    "url": "https://limflug.de/en/support/downloads.php?action=download&id=L275-E-datasheet-en.pdf&type=datasheets",
+    "source_type": "manufacturer",
+    "scope": "Identity, displacement, dry mass, rated point and page 2 Power/Torque/SFC graph",
+    "accessed_on": "2026-09-26",
+    "notes": "The intermediate points are a manual digitization of the manufacturer graph, not an original numerical table."
+  },
+  "provenance": {
+    "identity_and_rated_data": {
+      "source_id": "limbach_l275e_datasheet_en",
+      "source_type": "manufacturer",
+      "confidence": "high"
+    },
+    "points": {
+      "source_id": "limbach_l275e_datasheet_en",
+      "source_type": "digitized_manufacturer_graph",
+      "confidence": "low",
+      "note": "Approximate manual readings; see confidence and warnings on every point."
+    }
+  },
+  "warnings": [
+    "full_load_curve_not_part_load_bsfc_map",
+    "manual_digitization_requires_independent_verification",
+    "digitized_sfc_curve_ends_at_7000_rpm",
+    "rated_15_kw_at_7200_rpm_is_not_a_complete_sfc_point"
+  ],
+  "points": [
+    {
+      "rpm": 4000.0,
+      "power_hp_raw": 11.5,
+      "sfc_g_hph_raw": 490.0,
+      "confidence": "low",
+      "warnings": ["low_speed_graph_curves_overlap"]
+    },
+    {
+      "rpm": 4500.0,
+      "power_hp_raw": 13.3,
+      "sfc_g_hph_raw": 505.0,
+      "confidence": "low",
+      "warnings": ["low_speed_graph_curves_overlap"]
+    },
+    {
+      "rpm": 5000.0,
+      "power_hp_raw": 15.0,
+      "sfc_g_hph_raw": 500.0,
+      "confidence": "low",
+      "warnings": ["low_speed_graph_curves_overlap"]
+    },
+    {
+      "rpm": 5500.0,
+      "power_hp_raw": 16.2,
+      "sfc_g_hph_raw": 465.0,
+      "confidence": "medium",
+      "warnings": []
+    },
+    {
+      "rpm": 6000.0,
+      "power_hp_raw": 17.6,
+      "sfc_g_hph_raw": 390.0,
+      "confidence": "medium",
+      "warnings": []
+    },
+    {
+      "rpm": 6500.0,
+      "power_hp_raw": 19.3,
+      "sfc_g_hph_raw": 365.0,
+      "confidence": "low",
+      "warnings": ["high_speed_curve_bend_requires_redigitization"]
+    },
+    {
+      "rpm": 7000.0,
+      "power_hp_raw": 20.8,
+      "sfc_g_hph_raw": 380.0,
+      "confidence": "low",
+      "warnings": [
+        "high_speed_curve_bend_requires_redigitization",
+        "segment_to_rated_7200_rpm_not_digitized"
+      ]
+    }
+  ]
+}

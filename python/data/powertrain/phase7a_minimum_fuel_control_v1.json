@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "fixture_id": "phase7a_minimum_fuel_control_v1",
+  "source_type": "synthetic_test_fixture",
+  "base_powertrain_fixture_id": "synthetic_powertrain_fixture_v1",
+  "purpose": "Demonstrate that the lowest feasible rpm and the minimum instantaneous engine fuel rate are different selections.",
+  "solver_config_overrides": {
+    "operating_min_rpm": 4500.0
+  },
+  "inputs": {
+    "load_power_w": 6000.0,
+    "battery_soc": 0.8,
+    "battery_temperature_c": 25.0,
+    "generator_winding_temperature_c": 60.0,
+    "rectifier_case_temperature_c": 60.0,
+    "previous_bus_voltage_v": null,
+    "target_rpm": 6000.0
+  },
+  "expected": {
+    "lowest_feasible_rpm": 4500.0,
+    "closest_to_target_rpm": 6000.0,
+    "minimum_engine_fuel_rate_rpm": 6000.0,
+    "lowest_and_minimum_fuel_must_differ": true
+  },
+  "provenance": {
+    "candidate_physics": "existing synthetic_powertrain_fixture_v1",
+    "fuel_model": "existing two_stroke_gasoline_carbureted_v1 scientific analogue",
+    "selection_policy": "Phase 7A engineering diagnostic",
+    "objective_does_not_price_battery_energy": true
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "schema": "nir.android.assets",
+  "version": 1,
+  "build": "c9bf927201a388fcfced28fc172863cd8d4a0db0782418c7586014d7f7cf5cfb",
+  "files": [
+    {
+      "path": "app.css",
+      "size_bytes": 3220,
+      "sha256": "2ea1a690fec4cee675d0004aa43ec6e6003dce9fd536eb27a38fd395abbd6f77"
+    },
+    {
+      "path": "app.js",
+      "size_bytes": 25357,
+      "sha256": "e804aa36a46ec4720f96d23be2b1d09a08f3bbe9ef5c3e9dd25dd9369d741f06"
+    },
+    {
+      "path": "icon-192.png",
+      "size_bytes": 1167,
+      "sha256": "a7f83aee72a7f1670855f449ca5630cc31dd072d6c8ab07b24faa2e72b88d3c1"
+    },
+    {
+      "path": "icon-512.png",
+      "size_bytes": 5488,
+      "sha256": "da45d531b8a76dc266cc1804547b63070d242ef910f03254994bb43c0677b8fc"
+    },
+    {
+      "path": "index.html",
+      "size_bytes": 6744,
+      "sha256": "510551e12965f2fb91424a423bc3ae581872156f23bb91c7dae257394b038d76"
+    },
+    {
+      "path": "initial-config.json",
+      "size_bytes": 874,
+      "sha256": "94994b63f903b08ba77fd93d5e107d6b31e89015bc45f9d8420c546180cb9ad3"
+    },
+    {
+      "path": "licenses/CPYTHON_LICENSE.txt",
+      "size_bytes": 13809,
+      "sha256": "78b12c3a81360b357002334f0e70ea0e92eebf7a9b358805c03c48484945f3bb"
+    },
+    {
+      "path": "licenses/numpy/numpy/_core/include/numpy/random/LICENSE.txt",
+      "size_bytes": 1018,
+      "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec"
+    },
+    {
+      "path": "licenses/numpy/numpy/ma/LICENSE",
+      "size_bytes": 1593,
+      "sha256": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6"
+    },
+    {
+      "path": "licenses/numpy/numpy/random/LICENSE.md",
+      "size_bytes": 3511,
+      "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f"
+    },
+    {
+      "path": "licenses/numpy/numpy-2.2.5.dist-info/LICENSE.txt",
+      "size_bytes": 1543,
+      "sha256": "01fb016849aa427edb1bbbbd55f91c26ca6cadb32a5b20e7f000655dd05b0760"
+    },
+    {
+      "path": "licenses/PYODIDE_LICENSE.txt",
+      "size_bytes": 16725,
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "size_bytes": 450,
+      "sha256": "23bfb335654c1c2dcc05f210b7b96e79061294571c02ce8570e23ff1a2f49fd6"
+    },
+    {
+      "path": "probe.html",
+      "size_bytes": 478,
+      "sha256": "93058325543dd36f0a2a7c30abd5187fb28e49c055220ec4c59fbb9d8ce4f6f1"
+    },
+    {
+      "path": "probe.js",
+      "size_bytes": 3130,
+      "sha256": "043279dd4124868d074102d32185ee7eb89c99aed660a87cd74325e48077ce27"
+    },
+    {
+      "path": "python/android_runtime.py",
+      "size_bytes": 12448,
+      "sha256": "3ee8e9131b5ad32c9fbd69a8fbd33b2d6f20a8e194533d619455b188322ffab9"
+    },
+    {
+      "path": "python/battery_model.py",
+      "size_bytes": 20112,
+      "sha256": "4c0dbbf5804a200f20719a37e775be224c7338c1f1009b169501dde0abb920a6"
+    },
+    {
+      "path": "python/battery_profiles.py",
+      "size_bytes": 1749,
+      "sha256": "02073bdf31701f4055d7f0656f2c520bb65c5eb192402753934708220866edea"
+    },
+    {
+      "path": "python/browser_models.py",
+      "size_bytes": 16559,
+      "sha256": "ae882f64a40f9a701543ec2068e742add7144e9199c1d8f8d3e9917e31359346"
+    },
+    {
+      "path": "python/cold_charge_observer.py",
+      "size_bytes": 29538,
+      "sha256": "d180920cf386d0bdd531f9f998fd8334479369e10951814be1afd7fa2f67a7dd"
+    },
+    {
+      "path": "python/component_profiles.py",
+      "size_bytes": 2020,
+      "sha256": "cc8f866f584fffc6a8cfd5bc413c4efc0af8e357b28fad17d84d846f89f7b9ef"
+    },
+    {
+      "path": "python/data/control/phase7b1_fixed_ecms_avgas100ll_v1.json",
+      "size_bytes": 1485,
+      "sha256": "32ee991a5bbb84f18f29a5b114e5d8b15bee5c01e65bcfc9e6937dac9255ec85"
+    },
+    {
+      "path": "python/data/control/phase7b2_soc_adaptive_ecms_diagnostic_v1.json",
+      "size_bytes": 2066,
+      "sha256": "d4570b7200731f4eafb7d4fff17c4a6aef16b9e9a58a01124d7f39ef7bf513ad"
+    },
+    {
+      "path": "python/data/control/phase7c1_soc_adaptive_ecms_kp5_diagnostic_v1.json",
+      "size_bytes": 2153,
+      "sha256": "fa986f8a1790128ee3d7205d96467475c9e66e915cc5368bbb4fb993e173d202"
+    },
+    {
+      "path": "python/data/dc_bus/synthetic_dc_bus_fixture_v1.json",
+      "size_bytes": 10095,
+      "sha256": "ab7bde9cbd2bdcad7c23ab6b17c8cdeddb84dc8d7a776a3225ae5a2d5175ec86"
+    },
+    {
+      "path": "python/data/engine_part_load/engine_part_load_two_stroke_gasoline_carbureted_v1.json",
+      "size_bytes": 2245,
+      "sha256": "2bb617657e647c311aaf39544223f4ac3b629244e02762c9a2f2a73be7194a4b"
+    },
+    {
+      "path": "python/data/engines/limbach_l275e_digitized_v1.json",
+      "size_bytes": 3007,
+      "sha256": "26de35de17bbc12cbcd2244d07a35a1d61571a87d81e6c873ce3e45c3af9dda0"
+    },
+    {
+      "path": "python/data/generators/keri_afpm_uav_coil3_2021.json",
+      "size_bytes": 3223,
+      "sha256": "80a4c51bb1e1717482caf85c130aa22fe1a16ef812bfa264c5410e7fecfb5d27"
+    },
+    {
+      "path": "python/data/generators/limbach_l275e_direct_12s_generator_concept_v1.json",
+      "size_bytes": 2513,
+      "sha256": "517dbee8548c38f345a392df761d5d81f6d2c9fd6a6360822a207a847593aba5"
+    },
+    {
+      "path": "python/data/powertrain/phase7a_minimum_fuel_control_v1.json",
+      "size_bytes": 1111,
+      "sha256": "2672de99a053e093c39eab2f81ecd001f560357122dca4faef53b21321987719"
+    },
+    {
+      "path": "python/data/powertrain/synthetic_powertrain_fixture_v1.json",
+      "size_bytes": 1376,
+      "sha256": "e7584bd104d08afe7b650aaaafac7958658b80ab54fd57d87bf237f9a2ce7aca"
+    },
+    {
+      "path": "python/data/powertrain/synthetic_powertrain_mission_fixture_v1.json",
+      "size_bytes": 1623,
+      "sha256": "5c6f4a28203e81cdcad95373a8ea202184f86bdbd4109907efb11d31441d4692"
+    },
+    {
+      "path": "python/data/rectifiers/vishay_vs_qa300fa17.json",
+      "size_bytes": 15794,
+      "sha256": "e7491ddba7ecdad630823495ae208c8330ae7256390d2f7939ea7d871db621c7"
+    },
+    {
+      "path": "python/data/rectifiers/vishay_vs_qa400fa10.json",
+      "size_bytes": 13465,
+      "sha256": "130cf32e32273721dc32a2f3ec2ade741d8da8ae5aecf267b8872d411ca80917"
+    },
+    {
+      "path": "python/data/thermal/generator_thermal_nominal_v1.json",
+      "size_bytes": 1301,
+      "sha256": "1afdbcd3baac9282887d94f33719bf21fe97127acf41a4cecab6463c76acb44d"
+    },
+    {
+      "path": "python/data/thermal/generator_thermal_optimistic_v1.json",
+      "size_bytes": 1240,
+      "sha256": "3b56e1ec43c46397776030719e6d0fe71b87cc450dab5ab76213e26890019c64"
+    },
+    {
+      "path": "python/data/thermal/generator_thermal_pessimistic_v1.json",
+      "size_bytes": 1242,
+      "sha256": "ed221cd4eaa19628051e765b2c7d4a46418933861dadce12051bfd32f92f48f4"
+    },
+    {
+      "path": "python/data/thermal/heatsink_nominal_v1.json",
+      "size_bytes": 601,
+      "sha256": "99db4455fcdc1a942197275fb5ffc5fbbc078ab717422d53103548d92885c184"
+    },
+    {
+      "path": "python/data/thermal/heatsink_optimistic_v1.json",
+      "size_bytes": 604,
+      "sha256": "18920d607fdd863ee8e8929ac108fa656c97703c1afa47ef5e2ce8a9a53048ba"
+    },
+    {
+      "path": "python/data/thermal/heatsink_pessimistic_v1.json",
+      "size_bytes": 616,
+      "sha256": "5bc66721f9526e039c653266f2551e5131399dbc2c58da83f22b53ba8db104bf"
+    },
+    {
+      "path": "python/data/thermal/keri_generator_thermal_observation_v1.json",
+      "size_bytes": 1260,
+      "sha256": "6de9b3300f5a79c9fcd8866f18392f6a69b063d6da6c6457d14a6db8f0a79d6a"
+    },
+    {
+      "path": "python/dc_bus_solver.py",
+      "size_bytes": 36318,
+      "sha256": "813f437500484f6b40c0dc928ec7e75458977fd2407118318a4acde8f03815c9"
+    },
+    {
+      "path": "python/ecms_control.py",
+      "size_bytes": 30098,
+      "sha256": "cd7eecc5cb4b69b8dc1f0f54b3ae9105de31741585bba3dc5b85ffcfb1fbf943"
+    },
+    {
+      "path": "python/engine_model.py",
+      "size_bytes": 17064,
+      "sha256": "80554a6bec0654e58fac97242e2f38e7e28a9fb0e1eb4dde10c94f77a6601230"
+    },
+    {
+      "path": "python/engine_part_load.py",
+      "size_bytes": 21905,
+      "sha256": "deeca62886c75eb49d066c5a68d5e3643fd27018509286004f05b0ccfce8ea9a"
+    },
+    {
+      "path": "python/generator_model.py",
+      "size_bytes": 25684,
+      "sha256": "d203f1c737c071cd18ed69ca826cf391e0193b476f99168519a6596db5e059c7"
+    },
+    {
+      "path": "python/model-identity.json",
+      "size_bytes": 4163,
+      "sha256": "e308be554bb5d0d92529594ef7e593ad1853bfb3ac14f18e34554e98b7e5be5c"
+    },
+    {
+      "path": "python/monotone_interpolation.py",
+      "size_bytes": 3471,
+      "sha256": "a9858bae2a38202749e3f966c143515664f681037fd1129f0adefa032e1ee43b"
+    },
+    {
+      "path": "python/powertrain_mission.py",
+      "size_bytes": 45942,
+      "sha256": "432ebfd3684fcf887aa2def3c7ea8c9d942eeb3fc51acef5109d0eae4a633a68"
+    },
+    {
+      "path": "python/powertrain_solver.py",
+      "size_bytes": 40753,
+      "sha256": "54d5500d508101bbbd5d4f9ec4c7c61bc8df378739f98f5e9c0729c080e80efd"
+    },
+    {
+      "path": "python/powertrain_thermal.py",
+      "size_bytes": 20439,
+      "sha256": "686ba64f26e8621c149dbd646a9b708ab1c9464c81bca0761552d863eb1a1c0c"
+    },
+    {
+      "path": "python/rectifier_model.py",
+      "size_bytes": 30608,
+      "sha256": "fc3b36ff6bbc9a95f53681b4c4bdc9ff6609d5b5f826c790206d1e99c812daa6"
+    },
+    {
+      "path": "python/thermal_model.py",
+      "size_bytes": 4293,
+      "sha256": "b45f33427f500ea2c9a1a5cdcc5188314b05d5c68c8fa021d5966a8f0ba1d660"
+    },
+    {
+      "path": "README_RU.txt",
+      "size_bytes": 10933,
+      "sha256": "c42c7997945dfe87d48300ecff438feac7aac9825af8cf5d9883f299eb8e6df0"
+    },
+    {
+      "path": "runtime/numpy-2.2.5-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "size_bytes": 2823762,
+      "sha256": "800c98edc0c864dfa49f07005680c699b4b42b84eae1f8cb19d35b3634e7f05c"
+    },
+    {
+      "path": "runtime/pyodide-lock.json",
+      "size_bytes": 122027,
+      "sha256": "14d2c2dba101277999e17135e653d8f15389ad1437f53eae213bf0c3cdff723d"
+    },
+    {
+      "path": "runtime/pyodide.asm.js",
+      "size_bytes": 1074322,
+      "sha256": "356c42f69e1695397e9d8670bd3c2e678248cde76e18bdae1731e848537b47d7"
+    },
+    {
+      "path": "runtime/pyodide.asm.wasm",
+      "size_bytes": 8647684,
+      "sha256": "54309a5a2cfd757b1f0fdbc9093c92503f7b341500110329d932487183912718"
+    },
+    {
+      "path": "runtime/pyodide.js",
+      "size_bytes": 18597,
+      "sha256": "7f832a350240263d9946a9c3c877f7bcdab6c37d6dc65f72cd3be5905dca62dd"
+    },
+    {
+      "path": "runtime/python_stdlib.zip",
+      "size_bytes": 2424003,
+      "sha256": "831fd1e535084b972f87c6a35275de3d236efd5166f5e77ce89497710635e73c"
+    },
+    {
+      "path": "runtime-lock.json",
+      "size_bytes": 359,
+      "sha256": "9faa8b1ec2464c72f01b2b012746df3d497261d68670eecf43b679ad7687d1c4"
+    },
+    {
+      "path": "sw.js",
+      "size_bytes": 3473,
+      "sha256": "2bf83663b92dfde42c081aef3116759e5fab27dac16d0a809f7fb0fd0360d470"
+    },
+    {
+      "path": "worker.js",
+      "size_bytes": 6229,
+      "sha256": "b346adf4745835825608f3f3f65755e62bf253ac0c7e61e5bc6c3a8dd45835ab"
+    },
+    {
+      "path": "release-id.js",
+      "size_bytes": 86,
+      "sha256": "d6bc8add143788654b1f20c8ea5881c76e1a2ca83770e1ed3254a924fb5ab898"
+    }
+  ],
+  "total_bytes": 15646766
+}
