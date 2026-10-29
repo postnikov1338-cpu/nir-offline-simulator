@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "fixture_id": "synthetic_powertrain_fixture_v1",
+  "source_type": "synthetic_test_fixture",
+  "validation_status": "synthetic_physics_validation",
+  "engine_profile_id": "limbach_l275e_digitized_v1",
+  "engine_part_load_profile_id": "two_stroke_gasoline_carbureted_v1",
+  "low_load_sensitivity": "nominal",
+  "dc_bus_fixture_id": "synthetic_dc_bus_fixture_v1",
+  "mechanical_coupling": {
+    "kind": "rigid_direct_drive",
+    "gear_ratio": 1.0,
+    "generator_rpm_definition": "engine_rpm_times_gear_ratio"
+  },
+  "search": {
+    "operating_policy": "lowest_feasible_rpm",
+    "target_rpm": 6000.0,
+    "operating_min_rpm": 4000.0,
+    "operating_max_rpm": 7200.0,
+    "rpm_grid_step": 500.0,
+    "include_confirmed_rated_point": true,
+    "refine_infeasible_to_feasible_boundary": true,
+    "rpm_refinement_tolerance": 25.0
+  },
+  "fuel": {
+    "full_load_exact_relative_torque_tolerance": 1e-06,
+    "near_full_load_relative_torque_tolerance": 0.10,
+    "tolerance_source_type": "engineering_assumption",
+    "part_load_policy": "use_attached_engine_part_load_profile"
+  },
+  "dc_bus_solver_overrides": {
+    "voltage_scan_points": 101
+  },
+  "warnings": [
+    "synthetic_electrical_fixture_not_physical_hardware",
+    "limbach_full_load_curve_remains_primary",
+    "part_load_fuel_is_engineering_reconstruction",
+    "no_fuel_optimisation"
+  ]
+}

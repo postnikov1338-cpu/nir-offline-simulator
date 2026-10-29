@@ -1,0 +1,13 @@
+{
+  "profile_id": "heatsink_pessimistic_v1",
+  "rth_sink_to_ambient_k_per_w": 0.30,
+  "thermal_capacitance_j_per_k": 800.0,
+  "mass_kg": null,
+  "cooling_mode": "natural_or_low_airflow_sensitivity",
+  "air_velocity_m_s": null,
+  "source_type": "engineering_sensitivity",
+  "validation_status": "sensitivity_only_not_selected_hardware",
+  "approaching_limit_margin_k": 10.0,
+  "provenance": {"rth_cth": {"source_type": "engineering_sensitivity", "confidence": "scenario_only"}, "approaching_limit": {"source_type": "engineering_assumption"}},
+  "warnings": ["no_specific_heatsink_selected", "air_velocity_unknown"]
+}

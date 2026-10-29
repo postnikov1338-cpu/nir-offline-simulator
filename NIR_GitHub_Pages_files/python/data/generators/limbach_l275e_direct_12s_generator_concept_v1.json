@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "profile_id": "limbach_l275e_direct_12s_generator_concept_v1",
+  "revision": 1,
+  "manufacturer": null,
+  "model": "Direct-drive 12S generator concept for Limbach L275E",
+  "status": "project_concept",
+  "source_type": "derived_engineering_profile",
+  "validation_status": "requirements_only_not_ready",
+  "topology": {
+    "phase_count": 3,
+    "three_phase_system_count": 1,
+    "phase_system_shift_electrical_deg": null,
+    "winding_connection": null,
+    "pole_pairs": null
+  },
+  "electrical": {
+    "ke_convention": "ke_ll_rms_v_per_rpm",
+    "ke_ll_rms_v_per_rpm": null,
+    "phase_resistance_ohm": null,
+    "line_to_line_resistance_ohm": null,
+    "resistance_reference_temperature_c": null,
+    "winding_material": null,
+    "conductor_form": null,
+    "resistance_temperature_coefficient_per_k": null,
+    "phase_inductance_h": null
+  },
+  "limits": {
+    "maximum_speed_rpm": null,
+    "continuous_line_current_rms_a": null,
+    "peak_line_current_rms_a": null,
+    "maximum_winding_temperature_c": null
+  },
+  "losses": {
+    "loss_model_kind": null,
+    "constant_iron_loss_w": null,
+    "constant_mechanical_loss_w": null,
+    "iron_loss_map": null,
+    "mechanical_loss_map": null
+  },
+  "thermal_parameters": null,
+  "construction": {
+    "series_turns_per_phase": null
+  },
+  "sources": [
+    {
+      "source_id": "nir_phase2_system_requirements",
+      "title": "Phase 2 generator system requirements",
+      "url": "local://nir/phase2-system-requirements",
+      "source_type": "derived_system_requirement",
+      "scope": "Target power, speed interval and preliminary Ke design interval; not measured generator data",
+      "accessed_on": "2026-09-27",
+      "notes": "Local engineering requirement. It must not be treated as a confirmed generator characteristic."
+    }
+  ],
+  "provenance": {
+    "design_requirements": {
+      "source_id": "nir_phase2_system_requirements",
+      "source_type": "derived_system_requirement",
+      "confidence": "medium",
+      "note": "Requirements are kept outside active physical model fields."
+    }
+  },
+  "warnings": [
+    "not_a_manufacturer_profile",
+    "not_ready_for_operating_point_calculation",
+    "keri_analogue_parameters_not_transferred",
+    "ke_requirement_is_not_confirmed_ke"
+  ],
+  "design_requirements": {
+    "continuous_power_kw": 12.0,
+    "peak_power_kw": 15.0,
+    "speed_range_rpm": [4000.0, 7200.0],
+    "candidate_ke_ll_rms_v_per_rpm_range": [0.0055, 0.006]
+  },
+  "published_observations": null
+}

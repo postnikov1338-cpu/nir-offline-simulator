@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "profile_id": "two_stroke_gasoline_carbureted_v1",
+  "revision": 1,
+  "engine_part_load_family": "two_stroke_gasoline_carbureted_v1",
+  "part_load_method": "normalized_scientific_analogue",
+  "source_type": "normalized_scientific_analogue",
+  "validation_status": "engineering_reconstruction",
+  "rpm_grid": [4300, 5000, 5700, 6400],
+  "lambda_grid": [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9],
+  "k_pl_grid": [
+    [1.40, 1.09, 0.97, 0.92, 0.90, 0.92, 0.94, 0.97],
+    [1.14, 0.88, 0.81, 0.78, 0.80, 0.85, 0.93, 0.97],
+    [1.16, 0.94, 0.88, 0.83, 0.84, 0.88, 0.91, 0.96],
+    [1.10, 0.95, 0.88, 0.85, 0.88, 0.91, 0.94, 0.97]
+  ],
+  "high_speed_transition": {"start_rpm": 6400, "end_rpm": 7200, "method": "c1_cubic_hermite_with_smoothstep_basis_to_unity"},
+  "load_regions": {"low_load_boundary": 0.2, "near_full_boundary": 0.9},
+  "peak_torque_reference_rpm": 5000,
+  "low_load_fuel_floors_kg_h": {"optimistic": 0.22, "nominal": 0.35, "pessimistic": 0.55},
+  "default_low_load_sensitivity": "nominal",
+  "cell_provenance": {
+    "5000:0.8": {"source_type": "interpolated_missing_cell", "confidence": "low_medium", "note": "missing source cell filled from neighbouring structure"},
+    "5000:0.9": {"source_type": "interpolated_missing_cell", "confidence": "low_medium", "note": "missing source cell filled from neighbouring structure"}
+  },
+  "provenance": {
+    "main_map": {"source_type": "normalized_scientific_analogue", "primary_analogue": "Blair/Batoni 200 cc two-stroke carbureted engine", "confidence": "medium"},
+    "high_speed_transition": {"source_type": "engineering_high_speed_transition", "validation_source": "Derbi Predator two-stroke carbureted high-speed measurements", "confidence": "low_medium"},
+    "low_load": {"source_type": "displacement_scaled_low_load_scientific_analogue", "analogue": "Derbi Predator approximately 49 cc two-stroke carbureted engine", "confidence": "low"},
+    "approved_input": "user-approved L275E Part-Load Fuel Model v1 specification"
+  },
+  "warnings": [
+    "not_an_experimental_limbach_bsfc_map",
+    "limbach_full_load_curve_remains_primary",
+    "scientific_analogue_normalization_requires_validation",
+    "7200_rpm_has_no_confirmed_limbach_full_load_sfc"
+  ]
+}

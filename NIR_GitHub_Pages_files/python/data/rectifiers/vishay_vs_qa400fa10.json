@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "profile_id": "vishay_vs_qa400fa10",
+  "revision": 1,
+  "manufacturer": "Vishay Semiconductors",
+  "model": "VS-QA400FA10",
+  "source_type": "manufacturer",
+  "validation_status": "manufacturer_datasheet_static_model",
+  "topology": {
+    "bridge_topology": "six_pulse_diode",
+    "module_count": 3,
+    "diode_count": 6,
+    "diodes_per_module": 2
+  },
+  "limits": {
+    "reverse_voltage_limit_v": 100.0,
+    "junction_temperature_min_c": -40.0,
+    "junction_temperature_max_c": 150.0
+  },
+  "thermal": {
+    "rth_junction_to_case_single_leg_k_per_w": 0.32,
+    "rth_junction_to_case_both_legs_k_per_w": 0.16,
+    "rth_case_to_heatsink_k_per_w": 0.1,
+    "transient_thermal_impedance": {
+      "status": "transient_not_ready",
+      "figure": "Fig. 6 - Maximum Thermal Impedance ZthJC Characteristics",
+      "points": [],
+      "source_type": "manufacturer",
+      "reason": "Datasheet presents a duty-cycle pulse family; no unambiguous convolution model has been digitized"
+    },
+    "thermal_capacitance_j_per_k": null,
+    "heatsink_thermal_resistance_k_per_w": null,
+    "airflow_model": null
+  },
+  "forward_voltage_model": {
+    "value_kind": "typical",
+    "tabulated_points": [
+      {
+        "forward_current_a": 200.0,
+        "junction_temperature_c": 25.0,
+        "forward_voltage_v": 0.87,
+        "value_kind": "typical",
+        "source_id": "vishay_97113_datasheet",
+        "source_type": "manufacturer",
+        "units": "V",
+        "conditions": "Electrical specifications per diode; IF=200 A; TJ=25 C"
+      },
+      {
+        "forward_current_a": 200.0,
+        "junction_temperature_c": 150.0,
+        "forward_voltage_v": 0.73,
+        "value_kind": "typical",
+        "source_id": "vishay_97113_datasheet",
+        "source_type": "manufacturer",
+        "units": "V",
+        "conditions": "Electrical specifications per diode; IF=200 A; TJ=150 C"
+      },
+      {
+        "forward_current_a": 200.0,
+        "junction_temperature_c": 25.0,
+        "forward_voltage_v": 1.07,
+        "value_kind": "maximum",
+        "source_id": "vishay_97113_datasheet",
+        "source_type": "manufacturer",
+        "units": "V",
+        "conditions": "Electrical specifications per diode; IF=200 A; TJ=25 C; maximum"
+      }
+    ],
+    "digitized_points": [
+      {"forward_current_a": 50.0, "junction_temperature_c": 25.0, "forward_voltage_v": 0.523, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=25 C"},
+      {"forward_current_a": 100.0, "junction_temperature_c": 25.0, "forward_voltage_v": 0.646, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=25 C"},
+      {"forward_current_a": 150.0, "junction_temperature_c": 25.0, "forward_voltage_v": 0.762, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=25 C"},
+      {"forward_current_a": 200.0, "junction_temperature_c": 25.0, "forward_voltage_v": 0.875, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=25 C"},
+      {"forward_current_a": 250.0, "junction_temperature_c": 25.0, "forward_voltage_v": 0.985, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=25 C"},
+      {"forward_current_a": 300.0, "junction_temperature_c": 25.0, "forward_voltage_v": 1.096, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=25 C"},
+      {"forward_current_a": 350.0, "junction_temperature_c": 25.0, "forward_voltage_v": 1.208, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=25 C"},
+      {"forward_current_a": 50.0, "junction_temperature_c": 125.0, "forward_voltage_v": 0.465, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=125 C"},
+      {"forward_current_a": 100.0, "junction_temperature_c": 125.0, "forward_voltage_v": 0.601, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=125 C"},
+      {"forward_current_a": 150.0, "junction_temperature_c": 125.0, "forward_voltage_v": 0.692, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=125 C"},
+      {"forward_current_a": 200.0, "junction_temperature_c": 125.0, "forward_voltage_v": 0.766, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=125 C"},
+      {"forward_current_a": 250.0, "junction_temperature_c": 125.0, "forward_voltage_v": 0.834, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=125 C"},
+      {"forward_current_a": 300.0, "junction_temperature_c": 125.0, "forward_voltage_v": 0.896, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=125 C"},
+      {"forward_current_a": 350.0, "junction_temperature_c": 125.0, "forward_voltage_v": 0.956, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=125 C"},
+      {"forward_current_a": 50.0, "junction_temperature_c": 150.0, "forward_voltage_v": 0.442, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=150 C"},
+      {"forward_current_a": 100.0, "junction_temperature_c": 150.0, "forward_voltage_v": 0.573, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=150 C"},
+      {"forward_current_a": 150.0, "junction_temperature_c": 150.0, "forward_voltage_v": 0.660, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=150 C"},
+      {"forward_current_a": 200.0, "junction_temperature_c": 150.0, "forward_voltage_v": 0.733, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=150 C"},
+      {"forward_current_a": 250.0, "junction_temperature_c": 150.0, "forward_voltage_v": 0.800, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=150 C"},
+      {"forward_current_a": 300.0, "junction_temperature_c": 150.0, "forward_voltage_v": 0.862, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=150 C"},
+      {"forward_current_a": 350.0, "junction_temperature_c": 150.0, "forward_voltage_v": 0.921, "value_kind": "typical", "source_id": "vishay_97113_datasheet", "source_type": "digitized_manufacturer_graph", "confidence": "approximate", "units": "V", "conditions": "Digitized from Fig. 1, per diode, TJ=150 C"}
+    ]
+  },
+  "current_ratings": [
+    {
+      "rating_id": "if_av_per_module_tc60",
+      "basis": "per_module_average",
+      "current_a": 400.0,
+      "case_temperature_c": 60.0,
+      "conduction_condition": "datasheet average forward current per module",
+      "source_id": "vishay_97113_datasheet",
+      "source_type": "manufacturer",
+      "bridge_interpretation": "derived_conditional_limit",
+      "units": "A",
+      "conditions": "IF(AV) per module = 400 A at TC=60 C; not automatically the bridge DC-current rating"
+    },
+    {
+      "rating_id": "if_av_per_diode_tc60",
+      "basis": "per_diode_average",
+      "current_a": 200.0,
+      "case_temperature_c": 60.0,
+      "conduction_condition": "datasheet average forward current per diode",
+      "source_id": "vishay_97113_datasheet",
+      "source_type": "manufacturer",
+      "bridge_interpretation": "derived_duty_cycle_limit",
+      "units": "A",
+      "conditions": "IF(AV) per diode = 200 A at TC=60 C; compared with Idc/3"
+    },
+    {
+      "rating_id": "if_continuous_per_module_tc90",
+      "basis": "per_module_continuous",
+      "current_a": 400.0,
+      "case_temperature_c": 90.0,
+      "conduction_condition": "datasheet continuous forward current per module",
+      "source_id": "vishay_97113_datasheet",
+      "source_type": "manufacturer",
+      "bridge_interpretation": "derived_conditional_limit",
+      "units": "A",
+      "conditions": "IF per module = 400 A at TC=90 C"
+    },
+    {
+      "rating_id": "if_continuous_per_diode_tc90",
+      "basis": "per_diode_continuous",
+      "current_a": 200.0,
+      "case_temperature_c": 90.0,
+      "conduction_condition": "datasheet continuous forward current per diode",
+      "source_id": "vishay_97113_datasheet",
+      "source_type": "manufacturer",
+      "bridge_interpretation": "direct_conducting_diode_limit",
+      "units": "A",
+      "conditions": "IF per diode = 200 A at TC=90 C; compared with the conducting-diode current Idc"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "vishay_97113_datasheet",
+      "title": "VS-QA400FA10 Insulated Gen 2 Schottky Rectifier Module, 400 A",
+      "url": "https://www.vishay.com/docs/97113/vs-qa400fa10.pdf",
+      "source_type": "manufacturer",
+      "scope": "VR, TJ range, conditioned current ratings, tabulated per-diode Vf, Fig. 1 Vf curves, RthJC and RthCS",
+      "accessed_on": "2026-09-28",
+      "notes": "Datasheet revision 02-Jul-2025, document 97113."
+    },
+    {
+      "source_id": "phase3_six_pulse_bridge_definition",
+      "title": "Phase 3 six-pulse bridge assembly definition",
+      "url": "local://nir/phase3-six-pulse-bridge",
+      "source_type": "derived_system_requirement",
+      "scope": "Three modules and six diodes assembled as a three-phase six-pulse bridge",
+      "accessed_on": "2026-09-28",
+      "notes": "Assembly topology is a project definition, not a Vishay module rating."
+    }
+  ],
+  "provenance": {
+    "bridge_topology": {
+      "source_id": "phase3_six_pulse_bridge_definition",
+      "source_type": "derived_system_requirement",
+      "confidence": "high",
+      "units": "count/topology",
+      "conditions": "three-phase six-pulse diode bridge; 3 two-diode modules; 6 junctions"
+    },
+    "reverse_voltage_limit": {
+      "source_id": "vishay_97113_datasheet",
+      "source_type": "manufacturer",
+      "confidence": "high",
+      "units": "V",
+      "conditions": "cathode-to-anode voltage VR per diode"
+    },
+    "junction_temperature_range": {
+      "source_id": "vishay_97113_datasheet",
+      "source_type": "manufacturer",
+      "confidence": "high",
+      "units": "degC",
+      "conditions": "operating junction temperature range"
+    },
+    "thermal_resistances": {
+      "source_id": "vishay_97113_datasheet",
+      "source_type": "manufacturer",
+      "confidence": "high",
+      "units": "K/W",
+      "conditions": "RthJC maximum for single/both legs; RthCS typical for flat greased surface"
+    },
+    "digitized_vf_curves": {
+      "source_id": "vishay_97113_datasheet",
+      "source_type": "digitized_manufacturer_graph",
+      "confidence": "approximate",
+      "units": "V",
+      "conditions": "Fig. 1, typical forward voltage drop vs instantaneous forward current per diode; TJ=25,125,150 C"
+    }
+  },
+  "warnings": [
+    "vf_model_uses_typical_not_maximum_values",
+    "digitized_vf_points_are_approximate",
+    "vf_interpolation_limited_to_50_350_a_and_25_150_c",
+    "current_ratings_depend_on_case_temperature_and_basis",
+    "static_thermal_model_requires_case_temperature_input",
+    "no_heatsink_or_airflow_model",
+    "zthjc_graph_present_but_transient_model_not_digitized"
+  ]
+}

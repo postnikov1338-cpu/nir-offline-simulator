@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "fixture_id": "synthetic_dc_bus_fixture_v1",
+  "source_type": "synthetic_test_fixture",
+  "warning": "Synthetic values for Phase 4A verification only; not hardware data.",
+  "generator_profile": {
+    "schema_version": 1,
+    "profile_id": "synthetic_dc_bus_generator_v1",
+    "revision": 1,
+    "manufacturer": "Test only",
+    "model": "Synthetic three-phase PM generator",
+    "status": "synthetic_test_fixture",
+    "source_type": "synthetic_test_fixture",
+    "validation_status": "synthetic_fully_defined",
+    "topology": {
+      "phase_count": 3,
+      "three_phase_system_count": 1,
+      "phase_system_shift_electrical_deg": null,
+      "winding_connection": "star",
+      "pole_pairs": 4
+    },
+    "electrical": {
+      "ke_convention": "ke_ll_rms_v_per_rpm",
+      "ke_ll_rms_v_per_rpm": 0.006,
+      "phase_resistance_ohm": 0.01,
+      "line_to_line_resistance_ohm": null,
+      "resistance_reference_temperature_c": 20.0,
+      "winding_material": "copper",
+      "conductor_form": "round_wire",
+      "resistance_temperature_coefficient_per_k": 0.00393,
+      "phase_inductance_h": null
+    },
+    "limits": {
+      "maximum_speed_rpm": 8000.0,
+      "continuous_line_current_rms_a": 200.0,
+      "peak_line_current_rms_a": 1000.0,
+      "maximum_winding_temperature_c": 180.0
+    },
+    "losses": {
+      "loss_model_kind": "constant",
+      "constant_iron_loss_w": 50.0,
+      "constant_mechanical_loss_w": 30.0,
+      "iron_loss_map": null,
+      "mechanical_loss_map": null
+    },
+    "thermal_parameters": null,
+    "construction": {"series_turns_per_phase": 20},
+    "sources": [{
+      "source_id": "synthetic_dc_bus_fixture_v1",
+      "title": "Synthetic DC-bus fixture",
+      "url": "local://nir/synthetic-dc-bus-fixture-v1",
+      "source_type": "synthetic_test_fixture",
+      "scope": "Phase 4A unit tests only"
+    }],
+    "provenance": {
+      "all_fields": {
+        "source_id": "synthetic_dc_bus_fixture_v1",
+        "source_type": "synthetic_test_fixture",
+        "confidence": "high",
+        "note": "Not a physical generator"
+      }
+    },
+    "warnings": ["synthetic_test_fixture_not_physical_data"]
+  },
+  "rectifier_profile": {
+    "schema_version": 1,
+    "profile_id": "synthetic_dc_bus_rectifier",
+    "revision": 1,
+    "manufacturer": "Test only",
+    "model": "Synthetic six-pulse diode bridge",
+    "source_type": "synthetic_test_fixture",
+    "validation_status": "synthetic_fully_defined",
+    "topology": {
+      "bridge_topology": "six_pulse_diode",
+      "module_count": 3,
+      "diode_count": 6,
+      "diodes_per_module": 2
+    },
+    "limits": {
+      "reverse_voltage_limit_v": 100.0,
+      "junction_temperature_min_c": -40.0,
+      "junction_temperature_max_c": 200.0
+    },
+    "thermal": {
+      "rth_junction_to_case_single_leg_k_per_w": 0.02,
+      "rth_junction_to_case_both_legs_k_per_w": 0.01,
+      "rth_case_to_heatsink_k_per_w": 0.01,
+      "thermal_capacitance_j_per_k": 1000.0,
+      "heatsink_thermal_resistance_k_per_w": 0.1,
+      "airflow_model": {"kind": "synthetic_constant"}
+    },
+    "forward_voltage_model": {
+      "value_kind": "typical",
+      "tabulated_points": [
+        {"forward_current_a": 0.0, "junction_temperature_c": 25.0, "forward_voltage_v": 0.50, "value_kind": "typical", "source_id": "synthetic_dc_bus_fixture_v1", "source_type": "synthetic_test_fixture", "confidence": "high", "units": "V", "conditions": "Synthetic table; unit tests only"},
+        {"forward_current_a": 250.0, "junction_temperature_c": 25.0, "forward_voltage_v": 0.75, "value_kind": "typical", "source_id": "synthetic_dc_bus_fixture_v1", "source_type": "synthetic_test_fixture", "confidence": "high", "units": "V", "conditions": "Synthetic table; unit tests only"},
+        {"forward_current_a": 500.0, "junction_temperature_c": 25.0, "forward_voltage_v": 1.00, "value_kind": "typical", "source_id": "synthetic_dc_bus_fixture_v1", "source_type": "synthetic_test_fixture", "confidence": "high", "units": "V", "conditions": "Synthetic table; unit tests only"},
+        {"forward_current_a": 750.0, "junction_temperature_c": 25.0, "forward_voltage_v": 1.25, "value_kind": "typical", "source_id": "synthetic_dc_bus_fixture_v1", "source_type": "synthetic_test_fixture", "confidence": "high", "units": "V", "conditions": "Synthetic table; unit tests only"},
+        {"forward_current_a": 1000.0, "junction_temperature_c": 25.0, "forward_voltage_v": 1.50, "value_kind": "typical", "source_id": "synthetic_dc_bus_fixture_v1", "source_type": "synthetic_test_fixture", "confidence": "high", "units": "V", "conditions": "Synthetic table; unit tests only"},
+        {"forward_current_a": 0.0, "junction_temperature_c": 100.0, "forward_voltage_v": 0.45, "value_kind": "typical", "source_id": "synthetic_dc_bus_fixture_v1", "source_type": "synthetic_test_fixture", "confidence": "high", "units": "V", "conditions": "Synthetic table; unit tests only"},
+        {"forward_current_a": 250.0, "junction_temperature_c": 100.0, "forward_voltage_v": 0.70, "value_kind": "typical", "source_id": "synthetic_dc_bus_fixture_v1", "source_type": "synthetic_test_fixture", "confidence": "high", "units": "V", "conditions": "Synthetic table; unit tests only"},
+        {"forward_current_a": 500.0, "junction_temperature_c": 100.0, "forward_voltage_v": 0.95, "value_kind": "typical", "source_id": "synthetic_dc_bus_fixture_v1", "source_type": "synthetic_test_fixture", "confidence": "high", "units": "V", "conditions": "Synthetic table; unit tests only"},
+        {"forward_current_a": 750.0, "junction_temperature_c": 100.0, "forward_voltage_v": 1.20, "value_kind": "typical", "source_id": "synthetic_dc_bus_fixture_v1", "source_type": "synthetic_test_fixture", "confidence": "high", "units": "V", "conditions": "Synthetic table; unit tests only"},
+        {"forward_current_a": 1000.0, "junction_temperature_c": 100.0, "forward_voltage_v": 1.45, "value_kind": "typical", "source_id": "synthetic_dc_bus_fixture_v1", "source_type": "synthetic_test_fixture", "confidence": "high", "units": "V", "conditions": "Synthetic table; unit tests only"},
+        {"forward_current_a": 0.0, "junction_temperature_c": 200.0, "forward_voltage_v": 0.40, "value_kind": "typical", "source_id": "synthetic_dc_bus_fixture_v1", "source_type": "synthetic_test_fixture", "confidence": "high", "units": "V", "conditions": "Synthetic table; unit tests only"},
+        {"forward_current_a": 250.0, "junction_temperature_c": 200.0, "forward_voltage_v": 0.65, "value_kind": "typical", "source_id": "synthetic_dc_bus_fixture_v1", "source_type": "synthetic_test_fixture", "confidence": "high", "units": "V", "conditions": "Synthetic table; unit tests only"},
+        {"forward_current_a": 500.0, "junction_temperature_c": 200.0, "forward_voltage_v": 0.90, "value_kind": "typical", "source_id": "synthetic_dc_bus_fixture_v1", "source_type": "synthetic_test_fixture", "confidence": "high", "units": "V", "conditions": "Synthetic table; unit tests only"},
+        {"forward_current_a": 750.0, "junction_temperature_c": 200.0, "forward_voltage_v": 1.15, "value_kind": "typical", "source_id": "synthetic_dc_bus_fixture_v1", "source_type": "synthetic_test_fixture", "confidence": "high", "units": "V", "conditions": "Synthetic table; unit tests only"},
+        {"forward_current_a": 1000.0, "junction_temperature_c": 200.0, "forward_voltage_v": 1.40, "value_kind": "typical", "source_id": "synthetic_dc_bus_fixture_v1", "source_type": "synthetic_test_fixture", "confidence": "high", "units": "V", "conditions": "Synthetic table; unit tests only"}
+      ],
+      "digitized_points": []
+    },
+    "current_ratings": [{
+      "rating_id": "synthetic_continuous_per_diode",
+      "basis": "per_diode_continuous",
+      "current_a": 250.0,
+      "case_temperature_c": 150.0,
+      "conduction_condition": "synthetic continuous fixture rating",
+      "source_id": "synthetic_dc_bus_fixture_v1",
+      "source_type": "synthetic_test_fixture",
+      "bridge_interpretation": "direct_conducting_diode_limit",
+      "units": "A",
+      "conditions": "Synthetic table; unit tests only"
+    }],
+    "sources": [{
+      "source_id": "synthetic_dc_bus_fixture_v1",
+      "title": "Synthetic DC-bus fixture",
+      "url": "local://nir/synthetic-dc-bus-fixture-v1",
+      "source_type": "synthetic_test_fixture",
+      "scope": "Phase 4A unit tests only"
+    }],
+    "provenance": {
+      "all_fields": {
+        "source_id": "synthetic_dc_bus_fixture_v1",
+        "source_type": "synthetic_test_fixture",
+        "confidence": "high",
+        "units": "mixed",
+        "conditions": "Not physical hardware data"
+      }
+    },
+    "warnings": ["synthetic_test_fixture_not_physical_data"]
+  },
+  "battery_config": {
+    "profile_id": "synthetic_dc_bus_battery_v1",
+    "source_type": "synthetic_test_fixture",
+    "name": "Synthetic 12S battery",
+    "mass_kg": 5.0,
+    "capacity_ah": 100.0,
+    "nominal_v": 44.4,
+    "series_cells": 12,
+    "soc0": 0.8,
+    "soc_floor": 0.1,
+    "soc_target": 0.95,
+    "charge_c": 2.0,
+    "discharge_c": 4.0,
+    "system_charge_a": 150.0,
+    "system_discharge_a": 300.0,
+    "resistance_ohm": 0.5,
+    "min_cell_v": 1.0,
+    "max_cell_v": 4.2,
+    "peukert": {"enabled": false, "exponent": 1.0, "reference_current_a": 100.0},
+    "temperature": {"enabled": false, "current_limit_policy": "basic"},
+    "ocv_soc": [0.0, 1.0],
+    "ocv_cell_v": [3.7, 3.7],
+    "note": "Synthetic fixture only; flat OCV and large R expose multiple constant-power roots."
+  },
+  "solver_config": {
+    "source_type": "synthetic_test_fixture",
+    "minimum_search_voltage_v": 12.0,
+    "component_bus_voltage_max_v": 60.0,
+    "bus_undervoltage_v": 18.0,
+    "bus_overvoltage_v": 50.4,
+    "voltage_scan_points": 201,
+    "root_voltage_tolerance_v": 1e-7,
+    "branch_current_tolerance_a": 1e-6,
+    "current_balance_tolerance_a": 1e-7,
+    "balance_tolerance_w": 0.001,
+    "maximum_iterations": 100,
+    "stability_delta_v": 0.001,
+    "commutation_overlap_model": "disabled_missing_inductance",
+    "reverse_voltage_model": "static_ideal_estimate"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "profile_id": "keri_afpm_uav_coil3_2021",
+  "revision": 1,
+  "manufacturer": "Korea Electrotechnology Research Institute (research prototype)",
+  "model": "AFPM UAV generator, Coil III",
+  "status": "scientific_analogue",
+  "source_type": "scientific_analogue",
+  "validation_status": "published_partial_experimental_data",
+  "topology": {
+    "phase_count": 6,
+    "three_phase_system_count": 2,
+    "phase_system_shift_electrical_deg": 30.0,
+    "winding_connection": null,
+    "pole_pairs": null
+  },
+  "electrical": {
+    "ke_convention": "ke_ll_rms_v_per_rpm",
+    "ke_ll_rms_v_per_rpm": null,
+    "phase_resistance_ohm": 0.04,
+    "line_to_line_resistance_ohm": null,
+    "resistance_reference_temperature_c": null,
+    "winding_material": null,
+    "conductor_form": "litz_wire",
+    "resistance_temperature_coefficient_per_k": null,
+    "phase_inductance_h": null
+  },
+  "limits": {
+    "maximum_speed_rpm": null,
+    "continuous_line_current_rms_a": null,
+    "peak_line_current_rms_a": null,
+    "maximum_winding_temperature_c": null
+  },
+  "losses": {
+    "loss_model_kind": null,
+    "constant_iron_loss_w": null,
+    "constant_mechanical_loss_w": null,
+    "iron_loss_map": null,
+    "mechanical_loss_map": null
+  },
+  "thermal_parameters": null,
+  "construction": {
+    "series_turns_per_phase": 36
+  },
+  "sources": [
+    {
+      "source_id": "keri_energies_2021_8509",
+      "title": "Axial-Flux Permanent-Magnet Generator Design for Hybrid Electric Propulsion Drone Applications",
+      "url": "https://doi.org/10.3390/en14248509",
+      "source_type": "literature",
+      "scope": "Six-phase topology and Coil III data in Table 4: 36 series turns per phase and 0.04 ohm phase resistance",
+      "accessed_on": "2026-09-27",
+      "notes": "Scientific analogue only. Published performance observations are not a complete electrical or thermal parameter set."
+    }
+  ],
+  "provenance": {
+    "topology": {
+      "source_id": "keri_energies_2021_8509",
+      "source_type": "literature",
+      "confidence": "high",
+      "note": "Two three-phase systems shifted by 30 electrical degrees."
+    },
+    "coil_iii_table_4": {
+      "source_id": "keri_energies_2021_8509",
+      "source_type": "literature",
+      "confidence": "high",
+      "note": "R_phase=0.04 ohm and 36 series turns per phase are transcribed directly from Table 4."
+    }
+  },
+  "warnings": [
+    "scientific_analogue_not_project_generator",
+    "winding_connection_not_reported_in_profile",
+    "resistance_reference_temperature_not_reported",
+    "real_ke_not_identified",
+    "current_limits_not_identified",
+    "thermal_model_not_identified",
+    "published_operating_points_are_not_loss_maps"
+  ],
+  "design_requirements": null,
+  "published_observations": {
+    "tested_speed_max_rpm": 7000.0,
+    "maximum_efficiency_percent": 93.2,
+    "maximum_efficiency_test_rpm": 3000.0,
+    "maximum_efficiency_test_load_ohm": 2.0,
+    "maximum_output_power_kw": 5.0,
+    "maximum_output_test_rpm": 6500.0,
+    "maximum_output_test_load_ohm": 1.0,
+    "continuous_test_duration_min_greater_than": 30.0,
+    "continuous_test_power_kw_greater_than": 3.0,
+    "continuous_test_temperature_c_approximately": 40.0
+  }
+}

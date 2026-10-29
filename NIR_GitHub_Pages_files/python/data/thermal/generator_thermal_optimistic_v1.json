@@ -1,0 +1,22 @@
+{
+  "profile_id": "generator_thermal_optimistic_v1",
+  "source_type": "engineering_sensitivity",
+  "validation_status": "sensitivity_only_not_real_hardware",
+  "model_kind": "single_node",
+  "rth_k_per_w": 0.20,
+  "cth_j_per_k": 3000.0,
+  "ambient_coupling": "single_lumped_generator_temperature",
+  "cooling_mode": "optimistic_cooling_sensitivity",
+  "valid_loss_range_w": [0.0, 2000.0],
+  "valid_speed_range_rpm": [0.0, 7200.0],
+  "valid_ambient_range_c": [-20.0, 50.0],
+  "winding_temperature_limit_c": 155.0,
+  "approaching_limit_margin_k": 15.0,
+  "approaching_limit_source_type": "engineering_assumption",
+  "sources": [{"source_id": "phase5_sensitivity_definition", "source_type": "engineering_sensitivity", "scope": "Bounding thermal response; not identified hardware"}],
+  "provenance": {
+    "rth_cth": {"source_type": "engineering_sensitivity", "confidence": "scenario_only", "units": "K/W and J/K"},
+    "winding_limit": {"source_type": "scientific_analogue", "confidence": "analogue_only", "note": "KERI Coil III used class F Litz wire with 155 C thermal index; not a project-generator limit"}
+  },
+  "warnings": ["not_identified_from_hardware", "copper_loss_only_heats_winding_node", "155c_limit_is_keri_material_analogue"]
+}
